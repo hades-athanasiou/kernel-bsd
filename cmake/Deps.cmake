@@ -1,0 +1,7 @@
+find_and_install_package (yaml-cpp yaml-cpp)
+get_directory_property(hasParent PARENT_DIRECTORY)
+if(hasParent)
+    set (PKG_FOUND 1 PARENT_SCOPE)
+else()
+    set (PKG_FOUND 1)
+endif()

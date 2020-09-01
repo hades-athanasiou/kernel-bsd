@@ -1,0 +1,18 @@
+in: bedrock_server.exe
+out: bedrock_server_mod.exe
+filterdb: addition_symbols.db
+filter: !blacklist
+  - prefix: "_"
+  - prefix: "?__"
+  - prefix: "??_"
+  - prefix: "??@"
+  - prefix: "?$TSS"
+  - regex: "std@@U"
+  - name: atexit
+  - name: "??2@YAPEAX_K@Z"
+  - name: "??3@YAXPEAX@Z"
+  - name: "??3@YAXPEAX_K@Z"
+  - name: "?_Facet_Register@std@@YAXPEAV_Facet_base@1@@Z"
+  - regex: ".*printf$"
+  - regex: "JsonSchemaChildOption"
+  - regex: "JsonSchemaNode"
